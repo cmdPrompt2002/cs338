@@ -1,0 +1,3 @@
+Prompt Eua-anant
+I'll be using Kali for cs338 assignments.
+Kali installation status: complete
