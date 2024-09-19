@@ -1,0 +1,88 @@
+tmp directory: 48th2g94hgeuwbuefw
+
+Level 0
+    ssh -p 2220 bandit0@...
+Level 0-->1
+    Password: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+    Solution
+        ls
+        cat readme
+        Important lessons: how to print directory contents and file contents.
+Level 1-->2
+    Password: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+    Solution
+        ls   
+        cat ./-
+    Important lessons: the dashed character is important and mean different things in different context.
+    It can be used as a file name, or a special character that indicates options for a program, or for getting stuff to and from the stdout and stdin.
+    The ./ symbol indicates that it’s something from the current directory, not a special character
+Level 2-->3
+    Password: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+    Solution
+        cat “spaces in this filename”
+    Important lessons: spaces are usually interpreted as an argument separator.
+    Thus, to open a file with spaces in the name, there needs to be something that tells unix to interpret the spaces literally, like using quotation marks
+Level 3-->4
+    Password: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+    Solution
+        ls
+        cd inhere
+        ls -a
+        cat ...Hiding-From-You
+    Important lessons: ls doesn't display everything; the option -a can be used with ls to make it list all contents
+Level 4-->5
+    Password: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+    Solution
+        file ./*
+        cat ./-file07
+    Important lessons: file can print out file types. Can use * to apply the program to many inputs.
+Level5-->6
+    Password: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+    Solution
+        find inhere -size 1033c
+        cat inhere/maybehere07/.file2
+    Important lessons: options are useful
+Level6-->7
+    Password: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+    Solution
+        mkdir ../../tmp/48th2g94hgeuwbuefw
+        find ../.. -user bandit7 -group bandit6 -size 33c > ../../tmp/48th2g94hgeuwbuefw/abc.txt
+        grep -v 'Permission denied' ../../tmp/48th2g94hgeuwbuefw/abc.txt
+        cat ../../var/lib/dpkg/info/bandit7.password
+    Important lessons: grep options, find options, and saving output to a file can be handy
+Level7-->8
+    Password: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+    Solution
+        grep 'millionth' data.txt
+    Important lessons: how grep works
+Level8-->9
+    Password: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+    Solution
+        sort data.txt | uniq -u
+    Important lessons: uniq prints out all lines, and any line with an adjacent duplicate is printed once.
+    uniq -u only prints out the lines with no adjacent duplicate. 
+    Adjacent duplicate is like when you have two lines with the same contents next to each other.
+Level9-->10
+    Password: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+    Solution
+        grep -E --text '={5,50}' data.txt
+    Important lessons: grep options and regular expression usage.
+Level10-->11
+    Password: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+    Solution
+        base64 -d data.txt 
+    Important lessons: base64 can encode or decode sequence of chars to/from base64.
+Level11-->12
+    Password: 
+    Solution
+        cat data.txt | tr 'a-z' 'n-za-m' | tr 'A-Z' 'N-ZA-M'
+    Important lessons: tr STRING1 STRING2 input "translates" the input according to the specified scheme.
+    The scheme is specified by STRING1, which indicates the characters to be translated,
+    and STRING2, which indicates what the characters in STRING1 should be translated to. 
+
+    
+
+
+
+
+
